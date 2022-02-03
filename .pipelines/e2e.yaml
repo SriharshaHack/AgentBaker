@@ -1,8 +1,5 @@
 name: $(Date:yyyyMMdd)$(Rev:.r)_e2e
 
-variables:
-- group: ab-e2e
-
 pool:
   vmImage: ubuntu-18.04
 
