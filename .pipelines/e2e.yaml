@@ -15,11 +15,11 @@ jobs:
     displayName: az login
   - bash: |
       cd e2e
-      bash ./e2e-script.sh
-    displayName: run e2e
+      bash ./testscript.sh
+    displayName: harshatest     
   - bash: |
       cd e2e
-      bash ./testscript.sh
-    displayName: harshatest    
+      bash ./e2e-script.sh
+    displayName: run e2e   
   - publish: $(System.DefaultWorkingDirectory)/e2e/logs
     artifact: logs
